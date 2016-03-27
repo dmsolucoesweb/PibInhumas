@@ -1,0 +1,645 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Christian Icons';
+    src: url('../fonts/ChristianIcons.eot');
+    src: url('../fonts/ChristianIcons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ChristianIcons.woff') format('woff'),
+    url('../fonts/ChristianIcons.woff') format('woff2'),
+    url('../fonts/ChristianIcons.ttf')  format('truetype'),
+    url('../fonts/ChristianIcons.svg#ChristianIcons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background: #278BBA url("../img/cruz2.jpg") no-repeat !important;
+    background-size: 100% !important;
+    font-family: Oswald, Arial, sans-serif !important;
+}
+.bg-container {
+    background: rgba(0, 0, 0, 0.7);
+}
+.container {
+    padding: 0px !important;
+}
+header div#cabecalho {
+    height: 200px;
+}
+div#cabecalho div#logo {
+    width:150px;
+    margin-top: 20px !important;
+    margin: auto;
+    opacity: 0.8;
+    background: transparent;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+#logo:hover {
+    opacity: 1 !important;
+    background: url("../img/foco.png") no-repeat !important;
+    background-size: 100% !important;
+}
+#logo img:hover > #logo {
+    opacity: 1 !important;
+    background: url("../img/foco.png") no-repeat !important;
+    background-size: 100% !important;
+}
+div#cabecalho div#logo img {
+    height: 123px;
+}
+div#container_menu {
+    padding: 0px;
+    z-index: 9999;
+    box-shadow: 0px 18px 45px rgba(0,0,0,0.8);
+    height: 49px;
+}
+nav#menu_principal {
+    border-radius: 0px 0px 10px 10px;
+    border-top: 3px solid rgb(255, 99, 0);
+    border-bottom: 3px solid rgb(255, 99, 0);
+}
+nav a {
+    color: #004C84 !important;
+}
+nav a:hover {
+    color: #FF6300 !important;
+}
+#busca_menu {
+    padding-right: 40px;
+}
+#form_busca {
+    border-radius: 4px 0px 0px 4px !important;
+}
+@media (max-width: 768px) {
+#busca_menu {
+    padding-right: 70px;
+    border: none;
+}
+}
+.inner-addon { 
+    position: relative; 
+}
+/* style icon */
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;z-index: 3;}
+.right-addon .glyphicon { right: 0px;z-index: 3;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+#mural {
+	margin-top: -20px;
+}
+.carousel-control {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 30px;
+    text-align: center;
+    opacity: 1;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.9);
+    color: #00FFDB;
+    width: 45px;
+    height: 45px;}
+.carousel-control:hover {background: black !important;}
+.carousel-control.left {
+    background: rgba(0,0,0,0.7);
+    left: auto;
+    top: 25px;
+    right: 51px;
+    position: absolute;
+    border: 1px dotted white;}
+.carousel-control.right {
+    right: 0px;
+    left: auto;
+    background: rgba(0,0,0,0.7);
+    top: 25px;
+    right: 6px;
+    border-top: 1px dotted white;
+    border-right: 1px dotted white;
+    border-bottom: 1px dotted white;
+}
+#c_e {
+    padding-top: 15px;
+}
+#c_e h1 {
+    font-size: 19pt;
+    color: #FF6300;}
+#c_e h1 i {color: white;}
+table#atividades {
+    font-size: 10pt;    
+    margin-bottom: 20px;
+}
+td.dia {
+    text-align: center;
+}
+td.horario {
+    vertical-align: middle !important;
+    background-color: #ccc;
+    color: white;
+    text-align: center;
+    padding: 2px !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+td.programacao {
+    background-color: white;
+    padding-left: 6px;	
+}
+
+td#s {background-color: rgb(255,192,0);}
+td#t {background-color: rgb(146,208,80);}
+td#q {background-color: rgb(0,176,240);}
+td#qq {background-color: rgb(0,112,192);}
+td#sa {background-color: rgb(0,176,80);}
+td#d {background-color: rgb(244,85,17);}
+#atividades > tbody > tr > td, #atividades > tbody > tr > th, #atividades > tfoot > tr > td, #atividades > tfoot > tr > th, #atividades > thead > tr > td, #atividades > thead > tr > th {
+    padding: 0px 4px 0px 4px;
+}
+div#ceia {
+    margin: 2%;
+}
+.christian_icons {
+    font-family: 'Christian Icons' !important;               
+}
+div#ceia span {
+    color: white;
+    text-shadow: 1px 1px 1px #996600;
+    padding: 5px;
+    display: inline-block;
+    font-size: 60pt;
+    padding: 0px 5%; 
+    margin: -20px;
+}
+div#ceia h1 {
+    display: inline-block;
+} 
+div.limpa {clear: both;}
+/** COMEÇA STYLE DE NOTÍCIAS **/
+section#conteudo {
+    padding: 20px;    
+}
+div.secao {
+    height: 45px;
+    background-color: #d58512;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #996600;
+    -o-text-shadow: 1px 1px 1px #996600;
+    -moz-text-shadow: 1px 1px 1px #996600;
+    -webkit-text-shadow: 1px 1px 1px #996600;
+    line-height: 48px;
+    font-size: 21pt;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    overflow: hidden;
+}
+.secao_icon {
+    display:inline-block;
+    background-color: #996600;
+    text-shadow: 1px 1px 1px #d58512;
+    -webkit-text-shadow: 1px 1px 1px #d58512;
+    -o-text-shadow: 1px 1px 1px #d58512;
+    -moz-text-shadow: 1px 1px 1px #d58512;
+    width: 40px;
+    color: white;
+    height: 45px;
+    font-size: 35pt;
+    margin-right: 10px;
+}
+div.textos figure {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.textos figure img {
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+div.textos figure a {
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+div.textos figure img:hover {
+    background: #FF9500;
+    border: 1px solid #FF5100;
+}
+div.textos figure figcaption h1{
+    color: white;
+    font-size: 10pt;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+div.textos figure figcaption h1 a {
+    text-decoration: none;    
+    padding-left: 4px;
+    font-size: 14pt;
+}
+div.textos figure figcaption h1 a:hover {
+    text-decoration: none;
+    color: #FF9500;
+}
+div.textos figure figcaption h2{
+    color: white;
+    font-size: 10pt;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+div.textos figure figcaption h2 a {
+    text-decoration: none;   
+    padding-left: 4px;
+    font-size: 10pt;
+}
+div.textos figure figcaption h2 a:hover {
+    text-decoration: none;
+    color: #FF9500;
+}
+div.textos figure figcaption h3{
+    color: white;
+    font-size: 10pt;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+div.textos figure figcaption h3 a {
+    text-decoration: none;    
+    padding-left: 4px;
+    font-size: 9pt;
+}
+div.textos figure figcaption h3 a:hover {
+    text-decoration: none;
+    color: #FF9500;
+}
+div.mais {
+    height: 45px;
+    background-color: #d58512;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #996600;
+    line-height: 48px;
+    font-size: 21pt;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    overflow: hidden;
+}
+.mais_icone {
+    display:inline-block;
+    background-color: #996600;
+    text-shadow: 1px 1px 1px #d58512;
+    -webkit-text-shadow: 1px 1px 1px #d58512;
+    -o-text-shadow: 1px 1px 1px #d58512;
+    -moz-text-shadow: 1px 1px 1px #d58512;
+    width: 40px;
+    color: white;
+    height: 45px;
+    font-size: 35pt;
+    margin-right: 10px;
+}
+div#mais {
+    display: table;
+}
+div#smais {
+    background: #337AB7;
+    color: white;
+    font-size: 13pt;
+    width: 28px;
+    height: 28px;
+    line-height: 20px;
+    text-align: center;
+    display: inline;
+}
+div#mnoticias {
+    background: #FF9500;
+    color: black;
+    font-size: 20px;
+    height: 28px;
+    width: 140px;
+    text-align: center;
+    display: inline;
+}
+aside#sidebar {
+    margin-left: -4px;
+    padding-top: 20px;
+}
+div.secao {}
+div.s_azul {
+    background: #278BBA !important;
+    text-shadow: 1px 1px 1px #003460 !important;
+    -webkit-text-shadow: 1px 1px 1px #003460 !important;
+    -o-text-shadow: 1px 1px 1px #003460 !important;
+    -moz-text-shadow: 1px 1px 1px #003460 !important;}
+div.s_azul .secao_sidebar_icon {
+    background: #003460 !important;
+    text-shadow: 1px 1px 1px #337AB7 !important;
+    -webkit-text-shadow: 1px 1px 1px #337AB7 !important;
+    -o-text-shadow: 1px 1px 1px #337AB7 !important;
+    -moz-text-shadow: 1px 1px 1px #337AB7 !important;
+}
+div.s_azul_a {
+    background: #27BAA0 !important;
+    text-shadow: 1px 1px 1px #005044 !important;
+    -webkit-text-shadow: 1px 1px 1px #005044 !important;
+    -o-text-shadow: 1px 1px 1px #005044 !important;
+    -moz-text-shadow: 1px 1px 1px #005044 !important;}
+div.s_azul_a .secao_icon {
+    background: #00757E !important;
+    text-shadow: 1px 1px 1px #00FFED !important;
+    -webkit-text-shadow: 1px 1px 1px #00FFED !important;
+    -o-text-shadow: 1px 1px 1px #00FFED !important;
+    -moz-text-shadow: 1px 1px 1px #00FFED !important;
+}   
+i.christian_icons.secao_icon {width: 45px;padding-left: 4px;}
+div.secao_sidebar {
+    height: 45px;
+    margin-bottom: 6px;
+    background-color: #d58512;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #996600;
+    line-height: 48px;
+    font-size: 21pt;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    overflow: hidden;
+}
+.secao_sidebar_icon {
+    display:inline-block;
+    background-color: #996600;
+    text-shadow: 1px 1px 1px #d58512;
+    -webkit-text-shadow: 1px 1px 1px #d58512;
+    -o-text-shadow: 1px 1px 1px #d58512;
+    -moz-text-shadow: 1px 1px 1px #d58512;
+    width: 45px;
+    color: white;
+    height: 45px;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    top: 0px;
+    line-height: 48px !important;   
+}
+table.eventos {
+    width: 100%;
+    margin-bottom: 6px;
+}
+table.eventos tbody.ev {
+    height: 60px;
+    border: 1px solid white;
+    color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+table.eventos td.logo_org {
+    width: 60px;
+    border: 1px solid white;
+}
+table.eventos td.conf_n {
+    width: 40px;
+    text-align: center;
+    border-right: 1px dotted #FFF;
+}
+table.eventos td.dia {font-size:14pt; font-weight: bold;}
+table.eventos td.mes {font-size:11pt;}
+table.eventos td.hora {font-size: 7pt;}
+table.eventos td.evento {text-align: justify;padding:5px;}
+table.eventos tbody.smhbi td.logo_org {
+    background: url(../img/org_sprite.png) 0px 0px #003460;
+}
+table.eventos tbody.smhbi {
+    background: #337AB7;
+}
+table.eventos tbody.mca td.logo_org {
+    background: url(../img/org_sprite.png) 0px 180px #B6009A;
+}
+table.eventos tbody.mca {
+    background: #FF64D7;
+}
+table.eventos tbody.unijovem td.logo_org {
+    background: url(../img/org_sprite.png) 0px 60px #7ACE6D;
+}
+table.eventos tbody.unijovem {
+    background: #287700;
+}
+table.eventos tbody.igreja td.logo_org {
+    background: url(../img/org_sprite.png) 0px 121px #890202;
+}
+table.eventos tbody.igreja {
+    background: #C00000;
+}
+/** PEDIDOS DE ORAÇÃO **/
+#caixa_pedidos {
+    background: #FFF none repeat scroll 0% 0%;
+    border-radius: 5px;}
+#box_form_pedido {
+    padding: 4px 26px 10px 26px;
+    background: url("../img/dots1.png");
+    border-radius: 0px 0px 4px 4px;
+}
+#box_form_pedido p {
+    text-align: center;
+    font-style: italic;
+    background: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+}
+#box_form_pedido label {
+    color: #FF8700;
+    font-weight: normal !important;
+    font-size: 9pt;
+    background: white;
+    padding: 0px 6px 0px 6px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    margin: 3px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);}
+#box_form_pedido input:focus {
+    border: 1px solid #008648;
+    box-shadow: 0px 0px 6px rgba(1, 191, 57, 0.4);}
+#box_form_pedido textarea:focus {
+    border: 1px solid #008648;
+    box-shadow: 0px 0px 6px rgba(1, 191, 57, 0.4);}
+#box_form_pedido select:focus {
+    border: 1px solid #008648;
+    box-shadow: 0px 0px 6px rgba(1, 191, 57, 0.4);}
+#box_form_pedido .btn {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #008A63;
+    color: white;
+    border: 1px solid white;
+}
+#box_form_pedido .btn:focus {
+    color: #008a63;
+    background: white;
+}
+#box_form_pedido .form-group {
+    margin-bottom: 0px;}
+/** ACONTECE **/
+.hoverzoom {
+    display: inline-block;
+    position: relative;
+    width: 173px;
+    height: 132px;
+    overflow: hidden;
+    margin: 3px;
+    border: 5px solid rgba(255,255,255,.8);
+    border-radius: 4px;
+    -webkit-transition: all .5s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .5s cubic-bezier(.190, 1.000, .220, 1.000);
+    -ms-transition: all .5s cubic-bezier(.190, 1.000, .220, 1.000);
+    -o-transition: all .5s cubic-bezier(.190, 1.000, .220, 1.000);
+    transition: all .5s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+.hoverzoom:hover {
+    border-color: #66D9FF;
+    box-shadow: 1px 1px 30px rgba(255,255,255,0.8);
+}
+.hoverzoom > img {
+    width: 100%; 
+    border-radius: 2px;
+    -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+.hoverzoom:hover > img {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.hoverzoom .retina{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;    
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);    
+    border-radius: 2px;
+    text-align: center;
+    padding: 15px;
+    -webkit-transition:	 all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
+}
+.hoverzoom:hover .retina {
+    opacity: 1;
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+    
+}
+.hoverzoom .retina p {
+    color: #fff;
+}
+.hoverzoom .retina a:hover {
+    text-decoration: none;
+}
+.hoverzoom p {
+    margin: 0px;
+}
+.hoverzoom .retina p i.glyphicon-camera {
+    font-size: 20pt;
+}
+/** SUBFOOTER **/
+.esquerdo {
+    float: left;
+}
+.direito {
+    float: right;
+}
+.subfooter {
+    margin-top: 10px !important;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    background: white;
+}
+.quarto {
+    width: 25%;
+    height: 280px;
+}
+.cabecalho_niver {
+    height: 100px;
+    background: transparent url("../img/baloes_70.png") no-repeat;
+    margin-left: 8px;
+}
+.cabecalho_niver h1 {
+    font-size: 19pt;
+    color: #FFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    text-align: right;
+    width: 181px;
+    margin-right: 15px;
+    margin-top: 2px;
+    margin-left: auto;
+    padding-top: 26px;
+}
+.face {
+    height: 214px;
+    width: 500px;
+}
+.aniversariantes {
+    width: 292px;
+    height: 214px;
+    background-color: #F04400;
+    background-image: url("../img/fake-luxury.png");
+}
+.aniversariantes table {
+    background: white;
+    margin: -9px auto auto auto;
+    color: black;
+}
+.aniversariantes table caption {
+    display: none;
+}
+.aniversariantes table td {
+    border: 1px solid #FFF;
+}
+.aniversariantes table td.data_a {
+    color: #FF9500;
+    border-right: 4px solid white;}
+.pastor {
+    width: 378px;
+    height: 214px;
+    background-color: #00a9f7;
+    background-image: url("http://www.transparenttextures.com/patterns/nami.png");
+}
+.pastor h1 {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #004C84;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 0px;
+}
+span.bg-white {
+    background: white;
+    padding: 3px;
+}
+.pastor h2 {
+    font-size: 9pt;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+.pastor figure figcaption {
+    display: none;
+}
